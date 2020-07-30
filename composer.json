@@ -1,0 +1,22 @@
+{
+    "name": "tapesmile/yii2-likes",
+    "description": "Likes module using Redis",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","likes","redis"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artur Kvitash",
+            "email": "kviartur@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "yiisoft/yii2-redis": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "tapesmile\\likes\\": ""
+        }
+    }
+}
