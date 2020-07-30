@@ -10,6 +10,7 @@
             "email": "kviartur@yandex.ru"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
         "yiisoft/yii2": "~2.0.0",
         "yiisoft/yii2-redis": "~2.0.0"
