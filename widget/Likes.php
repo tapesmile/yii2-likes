@@ -51,13 +51,17 @@ class Likes extends Widget
     public function init()
     {
         parent::init();
+		
+        if (Yii::$app->getModule('likes') == null) {
+            throw new InvalidConfigException("Module 'yii2-likes' must be set on app config");
+        }
         
         if (!isset(Yii::$app->components['redis'])){
             throw new InvalidConfigException("Component 'yii2-redis' must be set on app config");
         }
         
         if (empty($this->model)) {
-            throw new InvalidConfigException('The "model" property must be set.');
+            throw new InvalidConfigException("The 'model' property must be set");
         }
         
         $this->entityId = get_class($this->model);
