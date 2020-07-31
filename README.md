@@ -31,9 +31,9 @@ Usage
 ```php
 'modules' => [
      'likes' => [
-         'class' => 'tapesmile\likes\Module' ,
+         'class' => 'tapesmile\likes\Module',
     ],
-];
+],
 ```
 А также необходимо сконфигурировать установленный redis-server
 ```php
@@ -44,7 +44,7 @@ Usage
             'port' => 6379,
             'database' => 0,
         ],
-];
+],
 ```
 После вышеуказанных настроек просто вставьте этот код в вашем view:
 ```php
