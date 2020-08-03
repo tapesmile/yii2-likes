@@ -54,7 +54,7 @@ Usage
 
 Также, вы можете переопределить стандартный view модуля, передав в виджет параметр view
 ```php
-<?= \tapesmile\likes\Like::widget([
+<?= \tapesmile\likes\widget\Likes::widget([
 	'model' => '$model',
 	'view' => '@alias/path/to/you/view'
 		]); ?>
@@ -63,7 +63,7 @@ Usage
 
 Label button можно изменить, передав в виджет следующие параметры:
 ```php
-<?= \tapesmile\likes\Like::widget([
+<?= \tapesmile\likes\widget\Likes::widget([
 	'model' => '$model',
     	'label' => [
         	'like' => 'Like',
