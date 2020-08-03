@@ -48,7 +48,7 @@ Usage
 ```
 После вышеуказанных настроек просто вставьте этот код в вашем view:
 ```php
-<?= \tapesmile\likes\widget\Likes::widget(['model' => '$model']); ?>
+<?= \tapesmile\likes\widget\Likes::widget(['model' => $model]); ?>
 ```
 Где ```'model'```=>```$model``` которую хотите "лайкнуть".
 
