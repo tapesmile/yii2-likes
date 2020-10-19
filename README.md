@@ -52,15 +52,6 @@ Usage
 ```
 Где ```'model'```=>```$model``` которую хотите "лайкнуть".
 
-Также, вы можете переопределить стандартный view модуля, передав в виджет параметр view
-```php
-<?= \tapesmile\likes\widget\Likes::widget([
-	'model' => '$model',
-	'view' => '@alias/path/to/you/view'
-		]); ?>
-```
->**NOTE:** Учтите, что для корректной работы Вашего view, необходимо использование методов класса \tapesmile\likes\models\RedisModel, а также иннициализаци javascript переменных  ```var likeUri``` и ```var unlikeUri```  для корректной работы роутов.
-
 Label button можно изменить, передав в виджет следующие параметры:
 ```php
 <?= \tapesmile\likes\widget\Likes::widget([
