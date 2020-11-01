@@ -25,9 +25,9 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Для работы модуля необходимо установить [redis server](https://redis.io/).
+Before using,  need to instal [redis server](https://redis.io/).
 
-Чтобы получить доступ к модулю, вам необходимо добавить следующий код в конфигурацию вашего приложения:
+To access the module, you need to add the following code to your application configuration:
 ```php
 'modules' => [
      'likes' => [
@@ -35,7 +35,7 @@ Usage
     ],
 ],
 ```
-А также необходимо сконфигурировать установленный redis-server
+Also, you need to configure the installed redis server
 ```php
     'components' => [
         'redis' => [
@@ -46,13 +46,13 @@ Usage
         ],
 ],
 ```
-После вышеуказанных настроек просто вставьте этот код в вашем view:
+After settings, add the following code to your view
 ```php
 <?= \tapesmile\likes\widget\Likes::widget(['model' => $model]); ?>
 ```
-Где ```'model'```=>```$model``` которую хотите "лайкнуть".
+When ```'model'```=>```$model``` Model, you want to "like"
 
-Label button можно изменить, передав в виджет следующие параметры:
+Change label button:
 ```php
 <?= \tapesmile\likes\widget\Likes::widget([
 	'model' => '$model',
@@ -61,7 +61,7 @@ Label button можно изменить, передав в виджет сле�
         	'unlike' => 'Unlike'
 	]); ?>
 ```
-Если вы хотите изменить route, то просто добавьте следующий код в секцию rules в вашем UrlManager:
+If you want to change the route, just add the following code to the rule section in your UrlManager:
 ```php
 	//UrlManager
             'rules' => [
