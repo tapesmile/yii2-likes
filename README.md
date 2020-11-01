@@ -1,6 +1,7 @@
 Like module for Yii2
 ====================
-Модуль лайков с использованием Redis, для АВТОРИЗИРОВАННЫХ пользователей
+
+Likes module using Redis, for AUTHORIZED users
 
 Installation
 ------------
