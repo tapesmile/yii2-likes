@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $model \tapesmile\likes\models\RedisModel */
 ?>
-<div class="post-likes">
+<div class="likes">
         <i class="fa fa-lg fa-heart-o"></i>
         <span class="likes-count"><?= $model->countLike(); ?></span>
         &nbsp;&nbsp;&nbsp;
